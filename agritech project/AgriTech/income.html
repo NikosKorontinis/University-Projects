@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./images/spray-drone-future-of-farming-svgrepo-com.svg" alt="Logo" class="logo">
+            <ul>
+                <li><a href="index.html"><button class="nav-button">Home</button></a></li>
+                <li><a href="plants.html"><button class="nav-button">Plants</button></a></li>
+                <li><a href="operations.html"><button class="nav-button">Operations</button></a></li>
+                <li><a href="events.html"><button class="nav-button">Events</button></a></li>
+                <li><a href="expenses.html"><button class="nav-button">Expenses</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Income</h2>
+        <div class="form-container">
+            <form id="incomeForm">
+                <label for="incomeSource">Source of Income:</label>
+                <input type="text" id="incomeSource" name="incomeSource" required>
+
+                <label for="incomeDate">Date:</label>
+                <input type="date" id="incomeDate" name="incomeDate" required>
+
+                <label for="incomeAmount">Amount:</label>
+                <input type="number" id="incomeAmount" name="incomeAmount" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <button type="submit">Submit Income</button>
+            </form>
+        </div>
+
+        <h3>Saved Incomes</h3>
+        <div class="table-container">
+            <table id="incomeTable">
+                <!-- Income data will be inserted here -->
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

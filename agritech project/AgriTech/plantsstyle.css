@@ -1,0 +1,117 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+}
+
+.navbar ul li a .nav-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a .nav-button:hover {
+    background-color: #367c39;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #228B22;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 450px;
+    margin: 40px auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid black; /* Add a solid border at the bottom of the grid container */
+}
+
+.grid-item {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.grid-item a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+.grid-item a img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.grid-item a span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.plant-box button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for box-shadow */
+}
+
+.plant-box button:hover {
+    background-color: #367c39;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+}
+
+

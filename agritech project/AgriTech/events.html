@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./images/spray-drone-future-of-farming-svgrepo-com.svg" alt="Logo" class="logo">
+            <ul>
+                <li><a href="index.html"><button class="nav-button">Home</button></a></li>
+                <li><a href="plants.html"><button class="nav-button">Plants</button></a></li>
+                <li><a href="operations.html"><button class="nav-button">Operations</button></a></li>
+                <li><a href="expenses.html"><button class="nav-button">Expenses</button></a></li>
+                <li><a href="income.html"><button class="nav-button">Income</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Events</h2>
+        <div class="form-container">
+            <form id="eventsForm">
+                <label for="eventName">Name of Event:</label>
+                <input type="text" id="eventName" name="eventName" required>
+
+                <label for="eventDate">Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+
+                <label for="damage">Damage:</label>
+                <input type="text" id="damage" name="damage" required>
+
+                <label for="percentageOfDamage">Percentage of Damage:</label>
+                <input type="number" id="percentageOfDamage" name="percentageOfDamage" required>
+
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+
+                <button type="submit">Submit Event</button>
+            </form>
+        </div>
+        <div class="display-container">
+            <h3>Saved Events</h3>
+            <table id="eventsTable">
+                <!-- Events will be dynamically inserted here -->
+            </table>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

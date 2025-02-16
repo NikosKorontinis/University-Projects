@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="./images/spray-drone-future-of-farming-svgrepo-com.svg" alt="AgroTech" class="logo">
+    </div>
+    <h2 class="welcome-title">Welcome to AgriTech</h2>
+    <div class="container">
+        <button id="loginBtn" class="toggle-button">Login</button>
+        <button id="registerBtn" class="toggle-button">Register</button>
+
+        <div id="loginForm" class="form" style="display: none;">
+            <span class="close-btn">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="loginEmail">Email:</label>
+                <input type="text" id="loginEmail" placeholder="Enter your email" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="registerForm" class="form" style="display: none;">
+            <span class="close-btn">&times;</span>
+            <h2>Register</h2>
+            <form>
+                <label for="registerName">Full Name:</label>
+                <input type="text" id="registerName" placeholder="Enter your full name" required>
+                <label for="registerEmail">Email:</label>
+                <input type="text" id="registerEmail" placeholder="Enter your email" required>
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" placeholder="Enter your password" required>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

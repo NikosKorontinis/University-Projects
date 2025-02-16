@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="./images/spray-drone-future-of-farming-svgrepo-com.svg" alt="Logo" class="logo">
+            <ul class="nav-buttons">
+                <li><a href="index.html"><button class="nav-button">Home</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>My Plants</h2>
+        <div class="grid-container" id="plantContainer"></div>
+        <div class="add-plant">
+            <input type="text" id="newPlantName" placeholder="Enter plant name">
+            <button onclick="addPlant()">Add Plant</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script src="scriptplants.js"></script>
+</body>
+
+</html>

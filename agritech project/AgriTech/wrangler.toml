@@ -1,0 +1,12 @@
+name = "AgroTech"
+type = "webpack"
+account_id = "b8f44bbdacdb28e77e3b029e6dd1bac2"
+workers_dev = true
+
+[site]
+bucket = ["./public","./women accesories","./women shoes-apparel images","./images"]
+pages_build_output_dir = "public"
+
+[env.production]
+name = "production"
+workers_dev = false

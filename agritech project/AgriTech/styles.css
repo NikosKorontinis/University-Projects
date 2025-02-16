@@ -1,0 +1,425 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    height: 80px;
+    animation: logo-entry 1s ease-out;
+}
+
+@keyframes logo-entry {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-title {
+    text-align: center;
+    color: #228B22;
+    margin-top: 0;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 150px);
+}
+
+.toggle-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #367c39;
+}
+
+.form {
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: white;
+    border-radius: 8px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.form.active {
+    display: flex;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.form input,
+.form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.form h2 {
+    color: #228B22;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #888;
+}
+
+.close-btn:hover {
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .logo {
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .toggle-button {
+        width: 80%;
+    }
+
+    .form input,
+    .form button {
+        width: 100%;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.nav-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: #4CAF50;
+}
+
+.plant-entry {
+    background: #f3f3f3;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.plant-menu ul {
+    list-style-type: none;
+}
+
+.plant-menu li {
+    margin-top: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 450px;
+    margin: 40px auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid black;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+.grid-item a img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.grid-item a span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.plant-box button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.plant-box button:hover {
+    background-color: #367c39;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    background-color: green;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: green;
+}
+
+.logo {
+    height: 50px;
+    margin: 10px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.plant-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.plant-item {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.plant-item:hover {
+    background-color: #367c39;
+}
+
+.add-plant {
+    margin-top: 20px;
+}
+
+.add-plant input {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.add-plant button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 100px;
+    /* Adjust the width as needed */
+}
+
+.add-plant button:hover {
+    background-color: #367c39;
+}
+
+.navbar .nav-buttons span {
+    color: white;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.separator {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px 0;
+}
+
+#agriculturalTasksContainer,
+#fertilizerPesticidesContainer,
+#irrigationContainer {
+    margin-top: 20px;
+}
+
+h4 {
+    margin-bottom: 10px;
+    color: #228B22;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+td button {
+    margin-right: 5px;
+}
