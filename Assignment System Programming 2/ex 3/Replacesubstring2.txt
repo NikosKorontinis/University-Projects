@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Function to replace a substring
+void replace_substring(const char* input, const char* find, const char* replace, char* output, size_t max_len) {
+  const char* pos = input;
+  size_t find_len = strlen(find);
+  size_t replace_len = strlen(replace);
+  size_t out_index = 0;
+
+  while (*pos && out_index < max_len - 1) {
+    const char* match = strstr(pos, find); // Look for the next occurrence
+    if (match) {
+      // Copy up to the match
+      size_t chunk_size = match - pos;
+      if (out_index + chunk_size >= max_len - 1) break; // Prevent overflow
+      strncpy_s(output + out_index, max_len - out_index, pos, chunk_size);
+      out_index += chunk_size;
+
+      // Copy the replacement
+      if (out_index + replace_len >= max_len - 1) break; // Prevent overflow
+      strncpy_s(output + out_index, max_len - out_index, replace, replace_len);
+      out_index += replace_len;
+
+      pos = match + find_len; // Move past the match
+    }
+    else {
+      // Copy the rest of the input
+      strncpy_s(output + out_index, max_len - out_index, pos, strlen(pos));
+      break;
+    }
+  }
+  output[max_len - 1] = '\0'; // Ensure null-termination
+}
+
+int main() {
+  char input[1024];
+  char find[1024];
+  char replace[1024];
+  char output[1024];
+  size_t max_len = sizeof(output);
+
+  // Prompt the user for input
+  printf("Enter the input string: ");
+  fgets(input, sizeof(input), stdin);
+  input[strcspn(input, "\n")] = '\0'; // Remove the newline character
+
+  printf("Enter the substring to find: ");
+  fgets(find, sizeof(find), stdin);
+  find[strcspn(find, "\n")] = '\0'; // Remove the newline character
+
+  printf("Enter the replacement substring: ");
+  fgets(replace, sizeof(replace), stdin);
+  replace[strcspn(replace, "\n")] = '\0'; // Remove the newline character
+
+  // Perform the substring replacement
+  replace_substring(input, find, replace, output, max_len);
+
+  // Display the results
+  printf("Original string: %s\n", input);
+  printf("Modified string: %s\n", output);
+
+  return 0;
+}
