@@ -1,0 +1,1 @@
+[{"id":1,"name":"Cinema","places":8},{"id":2,"name":"Gas Station","places":5},{"id":3,"name":"Groceries Store","places":5},{"id":4,"name":"Hospital","places":4},{"id":5,"name":"Pharmacies","places":8},{"id":6,"name":"Restaurants","places":10}]

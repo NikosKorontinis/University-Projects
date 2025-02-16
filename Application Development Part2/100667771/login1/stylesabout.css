@@ -1,0 +1,100 @@
+body {
+    background-color: #f2f2f2; /* Background color */
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+ 
+
+  .find-icon {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+}
+header {
+    background-color: #F0F8FE; /* Header background color */
+    color: black; /* Header text color */
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-section {
+    background-color: #fff; /* Background color */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-section h2 {
+    margin-bottom: 20px; /* Add spacing below heading */
+}
+
+.about-section p {
+    margin-bottom: 15px; /* Add spacing below paragraphs */
+}
+
+.container {
+    background-color: #333; /* Footer background color */
+    color: #fff; /* Footer text color */
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer.container {
+    background-color: #b9b7b7; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding */
+    position: fixed; /* Position fixed */
+    bottom: 0; /* Stick it to the bottom of the viewport */
+    width: 100%; /* Full width */
+}
+
+
+footer.container p {
+    margin: 0; /* Remove default margin */
+}
+
+footer.container a {
+    color: #fff; /* Link color */
+    text-decoration: none;
+}
+
+footer.container a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.float-end {
+    float: right; /* Float the element to the right */
+}

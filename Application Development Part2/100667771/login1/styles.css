@@ -1,0 +1,111 @@
+body {
+    background-color: #f2f2f2; /* Background color */
+    color: #333; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  ul li button {
+    display: block; /* Makes the button behave like the link */
+    background-color: #333; /* Background color like the links */
+    color: white; /* Text color like the links */
+    border: none; /* No borders */
+    padding: 14px 16px; /* Padding like the links */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* No underline */
+    font-family: Arial, sans-serif; /* Font family like the links */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+ul li button:hover {
+    background-color: #111; /* Background color on hover like the links */
+}
+
+ 
+
+  .find-icon {
+    width: 40px;
+    height: 40px;
+    filter: invert(100%);
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns with equal width */
+    gap: 0; /* Remove gap between grid items */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    border: 4px solid black; /* Add border around the grid container */
+    max-width: 400px; /* Limit the maximum width of the grid container */
+    margin: auto; /* Center the grid container horizontally */
+    
+}
+
+.grid-item {
+    text-align: center;
+    border-right: 4px solid black; 
+    border-bottom: 4px solid black; 
+}
+
+.grid-item img {
+   
+    width: 150px; /* Set a fixed width for images */
+    height: 200px;
+}
+
+footer.container {
+    background-color: #b9b7b7; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px; /* Padding */
+    position: fixed; /* Position fixed */
+    bottom: 0; /* Stick it to the bottom of the viewport */
+    width: 100%; /* Full width */
+}
+
+
+footer.container p {
+    margin: 0; /* Remove default margin */
+}
+
+footer.container a {
+    color: #fff; /* Link color */
+    text-decoration: none;
+}
+
+footer.container a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.float-end {
+    float: right; /* Float the element to the right */
+}
+
+

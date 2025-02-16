@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <link rel="stylesheet" href="maps.css" />
+</head>
+<body>
+    <div id="nav-bar">
+        
+        <ul>
+           
+            <li><img src="images/find-location-phone-smartphone-svgrepo-com.svg" alt="find image" class="find-icon" /></li>
+            <li><a href="index.php">Find-N-Go</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="./aboutpage.html">About</a></li>
+            <li style="float:right"><a href="logout.php">Log out </a></li>
+        </ul>
+        
+    </div>
+    <br>
+   <h1>Did you know that there are 10 Restaurants in Thessaloniki!</h1>
+   <br>
+   <div id= "map"></div>
+   <footer class="container">
+    
+    <p style="text-align: center;">© 2023–2024  <span >·</span> <a href="#">Privacy</a> <span >·</span> <a href="#">Terms</a></p>
+</footer>
+   <script src="restaurants.js"></script>
+    
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADxsHpSLc-4skJGPEZVMoSo-c8rLnN2pA&map_ids=efb721ff5eefd0f4&callback=initMap"></script>
+
+</body>
+</html>
